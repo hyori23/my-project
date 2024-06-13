@@ -11,19 +11,24 @@ body {
 }
 
 .container {
+  max-width: 64rem;
+  padding: 2rem;
   margin-inline: auto;
+  background-color: #15940c;
 }
 
 .navigation {
   display: flex;
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  font-size: 16px;
-  font-weight: 900;
+  overflow: hidden;
+  font-size: 25px;
   line-height: 1.25rem;
   color: #000;
-  background-color: #d4fbff;
+  list-style-type: none;
+  background-color: #f6f6eb;
 }
 .navigation p {
   margin: 0;
