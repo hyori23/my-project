@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.25rem;
+  color: #000;
+  background-color: #d4fbff;
+}
+.navigation p {
+  margin: 0;
+}
