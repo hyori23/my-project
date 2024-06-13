@@ -21,15 +21,23 @@ body {
   display: flex;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   overflow: hidden;
   font-size: 25px;
   line-height: 1.25rem;
   color: #000;
-  list-style-type: none;
   background-color: #f6f6eb;
 }
 .navigation p {
   margin: 0;
+}
+.navigation__menu-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-block: 0;
+  list-style: none;
+  border: 0.125rem;
 }
