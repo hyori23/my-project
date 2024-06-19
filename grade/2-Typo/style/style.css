@@ -129,6 +129,7 @@ body {
   max-width: 700px;
   height: auto;
   margin-right: 40px;
+  margin-bottom: 12px;
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid transparent;
@@ -158,11 +159,10 @@ body {
 
 .category {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   max-width: 100%;
   padding: 60px;
-  padding-right: 15px;
   margin-bottom: 3rem;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
@@ -202,4 +202,8 @@ body {
   display: grid;
   max-width: 700px;
   margin-left: 60px;
+}
+
+.desc {
+  max-width: 750px;
 }
