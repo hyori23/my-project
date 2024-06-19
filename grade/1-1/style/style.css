@@ -42,6 +42,17 @@ body {
   margin: 0;
 }
 
+.navigation__menu-group .nav-link {
+  color: #000;
+  transition: color 0.3s;
+}
+.navigation__menu-group .nav-link.nav-link--selected {
+  color: #fa8f21;
+}
+.navigation__menu-group .nav-link:hover {
+  color: #fa8f21;
+}
+
 .navigation {
   position: sticky;
   top: 0;
@@ -141,7 +152,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -153,10 +164,17 @@ body {
   margin-bottom: 3rem;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 24px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .category p {
   margin: 0;
   margin-bottom: 24px;
+  color: #666;
+}
+.category .right {
+  margin-right: 40px;
 }
 .category h2 {
   margin: 0;
@@ -167,4 +185,17 @@ body {
   margin: 0;
   margin-bottom: 55px;
   font-size: 35px;
+  color: #666;
+}
+
+.hover01 figure img {
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.hover01 figure img:hover {
+  transform: scale(1.05);
+}
+
+.desc2 {
+  margin-left: 40px;
 }

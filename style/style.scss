@@ -62,6 +62,21 @@ body {
   }
 }
 
+.navigation__menu-group {
+  .nav-link {
+    color: #000;
+    transition: color 0.3s;
+
+    &.nav-link--selected {
+      color: #fa8f21;
+    }
+
+    &:hover {
+      color: #fa8f21;
+    }
+  }
+}
+
 .game-container {
   display: flex;
   flex-direction: column;
@@ -97,6 +112,7 @@ body {
   justify-items: center;
   width: 100%;
   max-width: 1200px; /* 최대 너비를 1400px로 설정 */
+  padding-bottom: 40px;
   margin: 0 auto; /* 가운데 정렬을 위해 자동 마진 추가 */
   background-color: #00663d;
   border: 2px solid transparent;
