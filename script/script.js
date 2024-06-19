@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const lottiePlayer = document.getElementById('lottie-3');
 
   lottiePlayer.addEventListener('click', function () {
-    window.location.href = './grade/2-video/indexvideo.html'; // 이동할 페이지의 URL을 넣어주세요.
+    window.location.href = './grade/2-Typo/indexTypo.html'; // 이동할 페이지의 URL을 넣어주세요.
   });
 });
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const lottiePlayer = document.getElementById('lottie-4');
 
   lottiePlayer.addEventListener('click', function () {
-    window.location.href = './grade/2-Typo/indexTypo.html'; // 이동할 페이지의 URL을 넣어주세요.
+    window.location.href = './grade/2-CD/indexCD.html'; // 이동할 페이지의 URL을 넣어주세요.
   });
 });
 
@@ -56,6 +56,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const lottiePlayer = document.getElementById('lottie-5');
 
   lottiePlayer.addEventListener('click', function () {
-    window.location.href = './grade/2-CD/indexCD.html'; // 이동할 페이지의 URL을 넣어주세요.
+    window.location.href = './grade/Profile/indexp.html';
   });
 });
