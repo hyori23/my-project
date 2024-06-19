@@ -13,7 +13,6 @@ a {
 body {
   margin: 0;
   margin-inline: auto;
-  overflow-y: auto;
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -24,7 +23,7 @@ body {
 }
 
 .container {
-  padding: 2rem;
+  padding-top: 2rem;
   margin-inline: auto;
   background-color: #15940c;
 }
@@ -117,19 +116,16 @@ body {
   padding-bottom: 100px;
 
   h1 {
+    justify-content: center;
+    max-width: 1800px;
+    padding-top: 64px;
+    padding-bottom: 100px;
     margin: 0;
+    margin-inline: auto;
     margin-bottom: 12px;
     font-size: 8rem;
     font-weight: 900;
     line-height: 1.05;
-    text-align: center;
-  }
-
-  p {
-    margin: 0;
-    margin-bottom: 40px;
-    font-size: 35px;
-    line-height: 1.45;
     text-align: center;
   }
 }
@@ -142,8 +138,8 @@ body {
   &__middle {
     position: relative;
     inset: 0;
-    width: auto;
-    height: 600px;
+    max-width: 700px;
+    height: auto;
     margin-right: 40px;
     object-fit: cover;
     border: 2px solid transparent;
@@ -154,8 +150,8 @@ body {
   &__middle1 {
     position: relative;
     inset: 0;
-    width: auto;
-    height: 600px;
+    max-width: 500px;
+    height: auto;
     margin-left: 40px;
     object-fit: cover;
     border: 2px solid transparent;
@@ -173,6 +169,11 @@ body {
 }
 
 .category {
+  display: flex;
+  flex-direction: row; // 카테고리 내의 요소들을 가로로 정렬
+  align-items: center;
+  max-width: 100%;
+  padding: 60px;
   padding-right: 15px;
   margin-bottom: 3rem;
   font-family: 'Noto Sans KR', sans-serif;
@@ -191,6 +192,12 @@ body {
     margin-right: 40px;
   }
 
+  h2 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 42px;
+  }
+
   h3 {
     margin: 0;
     margin-bottom: 55px;
@@ -199,21 +206,21 @@ body {
   }
 }
 
-.slideshow {
-  display: flex;
-  gap: 1rem;
-  overflow: auto hidden; /* 가로 스크롤 유지 */ /* 세로 스크롤 숨김 */
+.hover01 {
+  figure {
+    img {
+      transition: transform 0.5s ease-in-out;
+      transform: scale(1);
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
 
-.slide {
-  flex: 0 0 100%;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
-  scroll-snap-align: start;
-}
-
-.slide img {
-  width: 100%;
-  vertical-align: middle;
+.imgflex {
+  display: grid;
+  max-width: 700px;
+  margin-left: 60px;
 }

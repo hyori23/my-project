@@ -94,7 +94,7 @@ body {
   p {
     max-width: 800px;
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2px;
     font-size: 35px;
     line-height: 1.45;
     text-align: center;
@@ -170,4 +170,14 @@ body {
     align-items: center;
     padding: 60px 80px;
   }
+}
+
+.pp {
+  max-width: 800px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  line-height: 1.45;
+  text-align: center;
 }
